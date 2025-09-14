@@ -41,19 +41,37 @@ public class App {
          //System.out.println(queue.contains("Alv"));
             
          
-         Queue<String> queue = new PriorityQueue<String>(Collections.reverseOrder());
+       //  Queue<String> queue = new PriorityQueue<String>(Collections.reverseOrder());
 
-        queue.offer("B");
+       /* queue.offer("B");
          queue.offer("C");
           queue.offer("D");
-           queue.offer("A");
+           queue.offer("A"); */
 
      
-           while (!queue.isEmpty()) {
+          /* while (!queue.isEmpty()) {
 
                  System.out.println(queue.poll());
-           }
+           } */
 
+
+           Stack<String> name = new Stack();
+
+           name.push("Jhon");
+           name.push("alvert");
+           name.push("Jan");
+
+
+
+
+           String names = "";
+        while (!name.empty()) {
+
+           names =  name.pop();
+            
+        }
+
+         System.out.println(names);
 
     }
 }
